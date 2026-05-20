@@ -1,0 +1,16 @@
+[
+  {
+    "scene_id": "s01",
+    "filename": "s01.mp3",
+    "start": 0.0,
+    "duration": 6.2,
+    "audio_dur": 4.2
+  },
+  {
+    "scene_id": "s02",
+    "filename": "s02.mp3",
+    "start": 6.2,
+    "duration": 7.1,
+    "audio_dur": 5.1
+  }
+]

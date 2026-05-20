@@ -1,0 +1,38 @@
+{
+  "name": "hyperframes-cn-enhanced",
+  "version": "0.1.0",
+  "description": "Chinese short-video workflows for HyperFrames: edge-tts narration, WeChat article videos, generated News Flash visuals, and resumable templates.",
+  "author": {
+    "name": "jungle",
+    "url": "https://github.com/ChaiJun666/hyperframes-cn-enhanced"
+  },
+  "homepage": "https://github.com/ChaiJun666/hyperframes-cn-enhanced",
+  "repository": "https://github.com/ChaiJun666/hyperframes-cn-enhanced",
+  "license": "Apache-2.0",
+  "keywords": [
+    "hyperframes",
+    "video",
+    "short-video",
+    "wechat",
+    "edge-tts",
+    "tts",
+    "chinese",
+    "news-flash"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HyperFrames CN Enhanced",
+    "shortDescription": "Chinese short-video workflows for HyperFrames",
+    "longDescription": "Enhances the HyperFrames authoring skill with Chinese short-video workflows: edge-tts narration, WeChat article-to-video guidance, generated News Flash visuals, local image asset guidance, and a resumable wechat-video template.",
+    "developerName": "hyperframes-cn-enhanced contributors",
+    "category": "Design",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/ChaiJun666/hyperframes-cn-enhanced",
+    "defaultPrompt": [
+      "Turn this WeChat article into a vertical short video with Chinese narration",
+      "Create a News Flash style market update video",
+      "Generate per-scene edge-tts narration for this HyperFrames video"
+    ],
+    "brandColor": "#e11d48"
+  }
+}

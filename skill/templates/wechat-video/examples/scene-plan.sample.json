@@ -1,0 +1,23 @@
+{
+  "title": "AI \u89c6\u9891\u751f\u4ea7\u5de5\u4f5c\u6d41",
+  "slug": "ai-video-workflow",
+  "format": "portrait",
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "cinema-title",
+      "title": "从文章到短视频",
+      "visual_source": "generated editorial background: content creation desk",
+      "key_points": ["长文章可以拆成短视频场景"],
+      "narration_intent": "介绍主题和转化目标"
+    },
+    {
+      "id": "s02",
+      "type": "infographic-grid",
+      "title": "保留中间产物",
+      "visual_source": "generated layout",
+      "key_points": ["article.md", "scene-plan.json", "narration.json", "timeline.json"],
+      "narration_intent": "说明可恢复工作流的价值"
+    }
+  ]
+}

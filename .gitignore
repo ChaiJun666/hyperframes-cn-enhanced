@@ -1,0 +1,7 @@
+.worktrees/
+__pycache__/
+.vscode/
+.idea/
+.DS_Store
+artifacts/
+runs/

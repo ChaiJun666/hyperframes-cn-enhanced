@@ -1,0 +1,16 @@
+{
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+20%",
+  "segments": [
+    {
+      "scene_id": "s01",
+      "filename": "s01.mp3",
+      "text": "一篇文章，也可以稳定拆成一个有配音、有节奏的短视频。"
+    },
+    {
+      "scene_id": "s02",
+      "filename": "s02.mp3",
+      "text": "关键不是一次生成到底，而是保留每一步中间产物，方便检查和恢复。"
+    }
+  ]
+}

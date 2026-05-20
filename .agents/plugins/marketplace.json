@@ -1,0 +1,20 @@
+{
+  "name": "hyperframes-cn-enhanced",
+  "interface": {
+    "displayName": "HyperFrames CN Enhanced Local Plugins"
+  },
+  "plugins": [
+    {
+      "name": "hyperframes-cn-enhanced",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hyperframes-cn-enhanced"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}
