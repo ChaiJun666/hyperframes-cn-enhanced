@@ -10,6 +10,7 @@
 ## 目录
 
 - [项目定位](#项目定位)
+- [场景扩展方向](#场景扩展方向)
 - [核心能力](#核心能力)
 - [仓库结构](#仓库结构)
 - [安装与接入](#安装与接入)
@@ -38,16 +39,35 @@ HyperFrames 的核心理念是：HTML 是视频的源文件。一个视频 compo
 - 为财经、科技、AI、资讯类内容提供信息流快消视觉方案。
 - 用模板保存文章、场景规划、旁白、音频、timeline、HTML 和 manifest，便于失败后恢复。
 
+## 场景扩展方向
+
+项目不只面向单次 HyperFrames composition 编写，也沉淀中文视频生产工作流。新增场景按统一的 production workflow 组织：先生成 brief、storyboard、asset plan、narration、timeline，再进入 composition、music plan 和 delivery。
+
+当前建议支持的高优先级场景：
+
+- 微信公众号文章转竖屏短视频。
+- 产品官网或产品说明转宣传片。
+- GitHub / 开源项目介绍视频。
+- Changelog / release notes 转功能发布视频。
+- 财经、AI、行业新闻类 News Flash 短视频。
+
 ## 核心能力
 
 | 能力 | 说明 | 主要文件 |
 | --- | --- | --- |
 | HyperFrames composition 规则 | 约束 `data-duration`、`data-track-index`、`window.__timelines`、媒体播放、GSAP 时间线等关键规则 | [`skill/SKILL.md`](skill/SKILL.md) |
+| 生产工作流与场景矩阵 | 用统一的 brief、storyboard、asset plan、narration、timeline、composition、music plan 和 delivery 串联多类中文视频场景 | [`skill/references/production-workflow.md`](skill/references/production-workflow.md), [`skill/references/scenario-matrix.md`](skill/references/scenario-matrix.md) |
 | 中文 TTS 工作流 | 逐场景拆分旁白，使用 `edge-tts` 生成 MP3，用 `ffprobe` 测量时长后生成 timeline | [`skill/references/tts-workflow.md`](skill/references/tts-workflow.md), [`skill/references/external-tts.md`](skill/references/external-tts.md) |
 | 微信文章转视频 | 解析 `mp.weixin.qq.com` 文章，提取图片、标题、引用、数据点，规划 10-14 个短视频场景 | [`skill/references/wechat-article-video.md`](skill/references/wechat-article-video.md) |
 | 信息流快消视觉 | 使用生成式背景图、强对比标题、三段式信息布局、数据卡片和图表表达 | [`skill/references/news-flash-images.md`](skill/references/news-flash-images.md) |
 | 可恢复模板 | 自动生成 run 目录，保存 article、scene-plan、narration、timeline、audio、video 和 manifest | [`skill/templates/wechat-video/`](skill/templates/wechat-video/) |
 | Codex 插件打包 | 通过 `.codex-plugin/plugin.json` 暴露本地插件元数据、能力描述、默认提示词和技能路径 | [`plugins/hyperframes-cn-enhanced/.codex-plugin/plugin.json`](plugins/hyperframes-cn-enhanced/.codex-plugin/plugin.json) |
+
+新增场景参考：
+
+- [`skill/references/product-promo-video.md`](skill/references/product-promo-video.md)
+- [`skill/references/open-source-project-video.md`](skill/references/open-source-project-video.md)
+- [`skill/references/release-note-video.md`](skill/references/release-note-video.md)
 
 ## 仓库结构
 
@@ -75,6 +95,11 @@ HyperFrames 的核心理念是：HTML 是视频的源文件。一个视频 compo
     ├── references/
     │   ├── external-tts.md
     │   ├── news-flash-images.md
+    │   ├── open-source-project-video.md
+    │   ├── product-promo-video.md
+    │   ├── production-workflow.md
+    │   ├── release-note-video.md
+    │   ├── scenario-matrix.md
     │   ├── tts-workflow.md
     │   └── wechat-article-video.md
     └── templates/
