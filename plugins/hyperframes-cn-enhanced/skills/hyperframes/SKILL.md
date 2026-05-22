@@ -22,6 +22,18 @@ For specific requests ("add a title card", "fix the timing on scene 3"), skip di
 
 For exploratory requests, consider offering 2-3 variations that differ meaningfully — not just color swaps, but different pacing, energy levels, or structural approaches. One safe/expected, one ambitious. Don't mandate this — it's a tool available when appropriate.
 
+### Scenario routing
+
+For open-ended video requests, route the request before planning scenes:
+
+- WeChat article URL (`mp.weixin.qq.com`) or local article markdown: read `references/wechat-article-video.md` and prefer `templates/wechat-video/` when available.
+- Product URL, product description, screenshots, landing page, or app/service promo: read `references/product-promo-video.md`.
+- GitHub repository URL, README, package, plugin, framework, or open-source launch: read `references/open-source-project-video.md`.
+- Changelog, release notes, or feature announcement: read `references/release-note-video.md`.
+- Data-heavy news, market update, finance, AI news, or urgent social content: read `references/news-flash-images.md` and use the News Flash style.
+
+For any request with multi-scene structure, narration, assets, music, or delivery expectations, read `references/production-workflow.md` first and produce reviewable staged artifacts before composition work.
+
 ### Step 1: Design system
 
 If `design.md` or `DESIGN.md` exists in the project, read it first (check both casings — they're different files on Linux). It's the source of truth for brand colors, fonts, and constraints. Use its exact values — don't invent colors or substitute fonts. Any format works (YAML frontmatter, prose, tables — just extract the values).
@@ -512,6 +524,11 @@ Skip on small edits (fixing a color, adjusting one duration). Run on new composi
 - **[references/external-tts.md](references/external-tts.md)** — edge-tts and third-party TTS integration with per-scene audio segmentation, speed calibration, overlap prevention, and composition wiring. Read when adding voiceover to a multi-scene composition.
 - **[references/tts-workflow.md](references/tts-workflow.md)** — End-to-end TTS→HTML workflow: script splitting, audio generation, timeline calculation, composition wiring, lint/render pipeline. Read when producing a full voiceover video from scratch.
 - **[references/wechat-article-video.md](references/wechat-article-video.md)** — WeChat public account article (mp.weixin.qq.com) → HyperFrames video pipeline. API parsing, image extraction, mixed scene types (text-card, img-full, split, stat, quote), narration generation, timing, and full composition authoring. Read when the user provides a WeChat article URL. If `templates/wechat-video/` is available, prefer it: copy the template, create a run directory, and keep all intermediate artifacts so failed runs can resume instead of building the full project from scratch.
+- **[references/production-workflow.md](references/production-workflow.md)** — Shared staged workflow for brief, storyboard, asset plan, narration, timeline, composition, optional music plan, and delivery notes. Read for multi-scene videos with reviewable production stages.
+- **[references/scenario-matrix.md](references/scenario-matrix.md)** — Routes common user intents to WeChat article video, product promo, open-source project intro, release note video, and News Flash workflows.
+- **[references/product-promo-video.md](references/product-promo-video.md)** — Product promo workflow for product URLs, screenshots, websites, SaaS tools, and services.
+- **[references/open-source-project-video.md](references/open-source-project-video.md)** — GitHub and open-source project intro workflow using README, docs, examples, screenshots, and verified repository signals.
+- **[references/release-note-video.md](references/release-note-video.md)** — Changelog, release note, and feature launch video workflow.
 - **[references/audio-reactive.md](references/audio-reactive.md)** — Audio-reactive animation: map frequency bands and amplitude to GSAP properties. Read when visuals should respond to music, voice, or sound.
 - **[references/css-patterns.md](references/css-patterns.md)** — CSS+GSAP marker highlighting: highlight, circle, burst, scribble, sketchout. Deterministic, fully seekable. Read when adding visual emphasis to text.
 - **[references/video-composition.md](references/video-composition.md)** — Video-medium rules: density, color presence, scale, frame composition, design.md as brand not layout. **Always read** — these override web instincts.
